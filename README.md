@@ -34,3 +34,5 @@ Para ejecutar los tests:
 Tambien se incluye un archivo Dockerfile, para generar una imagen docker de la aplicaccion hay que ejecutar el script `npm run docker`
 
 Limitantes de la solucion: La solucion no escala, ya que se realizan n+1 llamados a la API, se llama para obtener las peliculas y capitulos de serie, y por cada uno de estos, se realiza un llamado. Una posible solución seria guardar en un cache los resultados.
+
+Tambien hubiera sido deseable agregar documentacion, especialmente swagger, y un linter para garantizar un estilo uniforme del código.
